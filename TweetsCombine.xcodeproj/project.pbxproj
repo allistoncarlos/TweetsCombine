@@ -16,6 +16,9 @@
 		A533BCBE2718E8C300141866 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A533BCBC2718E8C300141866 /* LaunchScreen.storyboard */; };
 		A533BCC72718EAA200141866 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A533BCC62718EAA200141866 /* Tweet.swift */; };
 		A533BCC92718EAB600141866 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A533BCC82718EAB600141866 /* User.swift */; };
+		A59B7C152718EC860019472F /* TwitterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59B7C142718EC860019472F /* TwitterAPI.swift */; };
+		A59B7C1B2718F00B0019472F /* TwitterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59B7C1A2718F00B0019472F /* TwitterViewModel.swift */; };
+		A59B7C1E2718F2BF0019472F /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59B7C1D2718F2BF0019472F /* TweetCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,10 @@
 		A533BCBF2718E8C300141866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A533BCC62718EAA200141866 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		A533BCC82718EAB600141866 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A59B7C142718EC860019472F /* TwitterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAPI.swift; sourceTree = "<group>"; };
+		A59B7C182718EDE00019472F /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		A59B7C1A2718F00B0019472F /* TwitterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterViewModel.swift; sourceTree = "<group>"; };
+		A59B7C1D2718F2BF0019472F /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 		EE70BFB4FF16AF4C0191AF8B /* Pods_TweetsCombine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TweetsCombine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -52,7 +59,6 @@
 				2F5523C4CA2D64058C33ADE1 /* Pods-TweetsCombine.debug.xcconfig */,
 				1C95B3D02A0D9676AD29D629 /* Pods-TweetsCombine.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,14 +91,17 @@
 		A533BCB02718E8C300141866 /* TweetsCombine */ = {
 			isa = PBXGroup;
 			children = (
-				A533BCC52718EA8100141866 /* Models */,
 				A533BCB12718E8C300141866 /* AppDelegate.swift */,
 				A533BCB32718E8C300141866 /* SceneDelegate.swift */,
-				A533BCB52718E8C300141866 /* ViewController.swift */,
+				A59B7C142718EC860019472F /* TwitterAPI.swift */,
+				A59B7C1C2718F29C0019472F /* Views */,
+				A533BCC52718EA8100141866 /* Models */,
+				A59B7C192718EFFE0019472F /* ViewModels */,
 				A533BCB72718E8C300141866 /* Main.storyboard */,
 				A533BCBA2718E8C300141866 /* Assets.xcassets */,
 				A533BCBC2718E8C300141866 /* LaunchScreen.storyboard */,
 				A533BCBF2718E8C300141866 /* Info.plist */,
+				A59B7C182718EDE00019472F /* Config.xcconfig */,
 			);
 			path = TweetsCombine;
 			sourceTree = "<group>";
@@ -104,6 +113,23 @@
 				A533BCC82718EAB600141866 /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A59B7C192718EFFE0019472F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A59B7C1A2718F00B0019472F /* TwitterViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A59B7C1C2718F29C0019472F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A533BCB52718E8C300141866 /* ViewController.swift */,
+				A59B7C1D2718F2BF0019472F /* TweetCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,8 +250,11 @@
 				A533BCB62718E8C300141866 /* ViewController.swift in Sources */,
 				A533BCB22718E8C300141866 /* AppDelegate.swift in Sources */,
 				A533BCB42718E8C300141866 /* SceneDelegate.swift in Sources */,
+				A59B7C1E2718F2BF0019472F /* TweetCell.swift in Sources */,
 				A533BCC92718EAB600141866 /* User.swift in Sources */,
+				A59B7C152718EC860019472F /* TwitterAPI.swift in Sources */,
 				A533BCC72718EAA200141866 /* Tweet.swift in Sources */,
+				A59B7C1B2718F00B0019472F /* TwitterViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +282,7 @@
 /* Begin XCBuildConfiguration section */
 		A533BCC02718E8C300141866 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A59B7C182718EDE00019472F /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -314,6 +344,7 @@
 		};
 		A533BCC12718E8C300141866 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A59B7C182718EDE00019472F /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

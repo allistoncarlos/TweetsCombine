@@ -2,3 +2,7 @@
 Pods/
 
 Podfile.lock
+
+TweetsCombine/Config.xcconfig
+
+TweetsCombine.xcworkspace/xcuserdata/alliston.xcuserdatad/
